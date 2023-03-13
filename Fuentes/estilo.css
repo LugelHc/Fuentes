@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Port Lligat Slab', serif;
+}
+
+body{
+    background-color: #f0f8ff;
+}
+#nav-bar{
+    background-color: #becece50;
+    width: 100%;
+    padding: 15px;
+}
+
+
+#flex-container{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+    flex-wrap: wrap;
+}
+.flex-item{
+    color: #222;
+    order: 0;
+}
+.flex-item:hover{
+    color: #f55;
+    cursor: pointer;
+}
+.grid-layout{
+    font-size: large;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 70% 30%; 
+    grid-template-rows: 100%;
+}
+
+.info{
+    border-right: 2px solid #222;
+    letter-spacing: .5mm;
+    padding-right: 25px;
+}
+#Minfo{
+    text-decoration: none;
+    color: #222;
+}
+#Minfo:hover{
+    color: #f55;
+}
+.video{
+    text-decoration: none;
+    color: #48e;
+}
+.video:hover{
+    color: rgba(13, 49, 102, 0.452);
+}
+#invadirPeru{
+    color: rgb(201, 40, 187);
+    text-decoration: none;
+    transition: color .5s;
+}
+#invadirPeru:hover{
+    color: rgb(130,20,140);
+}
+.imagenGallo{
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+    width: 300px;
+    border: 2px solid #999;
+}
+.footer{    
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    background-color: #becece50;
+    margin-top: 25px;
+}
+.anuncioSquid{
+    background: url("walter-squid.jpg");
+    display: block;
+    margin: 30px auto;
+    height: 300px;
+    width: 350px;
+}
+.moda, .moda2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;  
+    transition: opacity .6s;
+}
+.modal--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+ 
+}
+.modal_container,.modal_container2{
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background: #fff;
+    margin: auto;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+.modal_paragraph{
+    margin-bottom: 10px;
+}
+.modal_img{
+    width: 90%;
+}
+.modal_close,.modal_close2{
+    position: absolute;
+    top: 0;
+    right: .2em;
+    text-decoration: none;
+    color: #000;
+    font-size: xx-large;
+    transition: color .3s;
+}
+.modal_close:hover,.modal_close2:hover{
+    color: #f55;
+}
